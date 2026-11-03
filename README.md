@@ -1,15 +1,27 @@
-# CME538 - Introduction to Data Science for Civil & Mineral Engineers
+# CME538 Assignments
 
-## Fall 2026
-
-This repository contains the public course materials for CME538 in Fall 2026.
+My work for the assignments in CME538 (Introduction to Data Science for Civil & Mineral Engineers), Fall 2026.
 
 ## Repository Contents
 
-| Directory | Contents |
+| Path | Contents |
 |---|---|
-| [`assignments/`](./assignments/) | Student assignment notebooks, datasets, and supporting files. |
-| [`tutorials/`](./tutorials/) | Student tutorial materials, datasets, databases, and supporting files. |
-| [`lectures/`](./lectures/) | Weekly lecture slides, notebooks, recordings, datasets, and code-along materials. |
+| [`assignments/`](./assignments/) | Assignment notebooks (`assignment1`–`assignment9`), their datasets, and supporting files. |
+| [`requirements.txt`](./requirements.txt) | Python dependencies used by the notebooks. |
 
-The root directory also contains the shared Python dependencies in [`requirements.txt`](./requirements.txt).
+Each `assignments/assignmentN/` folder holds the notebook(s) and data for that assignment.
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+jupyter notebook
+```
+
+Then open the notebook for the assignment you want to run.
+
+## Notes
+
+- Lecture and tutorial materials are not included in this repository.
+- The zipped copy of assignment 4 (`assignment4.zip`) is not tracked; use the `assignments/assignment4/` folder instead.
+- A few datasets are large (e.g. the 2019 bike share CSVs and `winemag_data.csv`, 50 MB+).
